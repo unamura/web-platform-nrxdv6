@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom manipulation</title>
+</head>
+
+<body>
+  <a href="/index.html">Index</a>
+  <button id="visualizza">Visualizza</button>
+  <button id="disattiva">Inibisci visualizza</button>
+  <button id="abilita">Abilita visualizza</button>
+  <div id="div-da-manipolare" class="div-backgournd" title="questo è title del div">Questo è un div nuovo</div>
+</body>
+
+
+<button onclick="manipolaDiv()">visualizza registrato in Html</button>
+
+
+<div onclick="manipolaDiv()" style="outline: 1px solid green; padding: 10px">
+  cliccami
+  <div onclick="clickInterno(event)" class="interno"
+    style="background-color: lightyellow; margin: 5px;border: 1px solid gray; width: 100px">cliccami
+    a me</div>
+  <a id="link-to-google" href="https://google.it">vai a google</a>
+</div>
+
+<script src="dom_manipulation.js"></script>
+
+</html>

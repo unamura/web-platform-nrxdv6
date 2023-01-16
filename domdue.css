@@ -1,0 +1,38 @@
+body {
+  background-color: orange;
+}
+
+.title-back {
+  background-color: rgb(48, 48, 48);
+  color: rgb(255, 248, 240);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.middle-col {
+  background-color: rgb(121, 195, 200);
+  /*outline: 1px solid rgba(255, 0, 0, 0.521);*/
+}
+
+.conferma-middle {
+  background-color: wheat;
+}
+
+.ultimate-conferma {
+  padding-top: 20px;
+  display: none;
+}
+
+button#yes-avanti {
+  width: 100%;
+}
+
+.after-confirm {
+  display: none;
+  padding-top: 20px;
+}
+
+.after-confirm-middle {
+  background-color: blueviolet;
+  color: white;
+}

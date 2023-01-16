@@ -1,0 +1,86 @@
+body {
+  background-color: orange;
+  display: block;
+}
+
+h1 {
+  padding-left: 10px;
+  border: 2px dotted red;
+  border-bottom-color: black;
+  margin-left: 10px;
+  background-color: #f00;
+  z-index: -10;
+  position: relative;
+}
+
+div.suca {
+  width: 90px;
+  font-size: 30px;
+  line-height: 30px;
+  line-height: 1.2;
+  /* height: 30px; */
+}
+
+.flex-table {
+  display: flex;
+  justify-content: center;
+  outline: 2px solid blue;
+}
+
+.flex-col {
+  outline: 2px dotted aquamarine;
+  min-width: 50px;
+  flex: 1 1 auto;
+}
+
+/* provare a fare una tabella con flex con colonne di queste proporzioni 1/5 2/5 2/5, con un minimo di 50px  max 100px e spazio in eccedenza in mezzo e non hai lati*/
+
+.flex-table-due {
+  display: flex;
+  justify-content: space-between;
+  outline: 2px solid blue;
+}
+
+.flex-uno {
+  outline: 2px dotted aquamarine;
+  /* min-width: 50px; */
+  /*flex: 0 0 20%;*/
+  /* width: 20%; */
+  flex: 1 0 10px;
+  max-width: 100px;
+}
+
+.flex-due,
+.flex-tre {
+  outline: 2px dotted aquamarine;
+  /* min-width: 50px; */
+  /* flex: 0 0 40%; */
+  /* width: 40%; */
+  flex: 2 0 10px;
+  max-width: 100px;
+}
+
+.bordo {
+  outline: 2px dotted rgb(0, 0, 0);
+}
+
+.bordo-col {
+  outline: 2px dotted aquamarine;
+}
+
+.boot-start {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+}
+
+.row-cont-me {
+  outline: 2px solid bisque;
+}
+
+.col-row-cont-me {
+  outline: 0.5px dotted brown;
+}
+
+.cont-me {
+  outline: 3px dashed indigo;
+}

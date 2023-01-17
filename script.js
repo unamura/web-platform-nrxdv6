@@ -27,7 +27,7 @@ let player = {
   name: 'Manuel',
   chips: 0,
   prov: [1, 'as'],
-  hello: function hello() {
+  hello() {
     console.log('Hello world');
   },
 };
@@ -73,3 +73,72 @@ function newCard() {
   cardsEl.textContent = 'Cards: ';
   sumEl.textContent = 'Sum: ';
 }
+// ---------------------------------------------------------------------
+let appleShelf = document.querySelector('#apple-shelf');
+let orangeShelf = document.querySelector('#orange-shelf');
+
+let fruits = [
+  '🍊',
+  '🍇',
+  '🍊',
+  '🍇',
+  '🍇',
+  '🍇',
+  '🍊',
+  '🍇',
+  '🍊',
+  '🍊',
+  '🍇',
+  '🍇',
+];
+
+console.log(fruits[2]);
+function sortFruits() {
+  for (let i = 0; i < fruits.length; i++) {
+    if (fruits[i] === '🍊') {
+      orangeShelf.textContent += '🍊';
+    }
+    if (fruits[i] === '🍇') {
+      appleShelf.textContent += fruits[i];
+    }
+  }
+}
+sortFruits();
+
+let age = 15;
+
+function discount() {
+  let msg = '';
+  if (age < 6) {
+    msg = 'free';
+  } else if (age < 17) {
+    msg = 'child discount';
+  } else if (age < 26) {
+    msg = 'student discount';
+  } else if (age < 66) {
+    msg = 'full price';
+  } else {
+    msg = 'senior citizen discount';
+  }
+  console.log(msg);
+}
+discount();
+
+let user = {
+  fisrtName: 'Manuel',
+  age: 29,
+  country: 'Italy',
+};
+
+function logData() {
+  console.log('logData function');
+  let message =
+    user.fisrtName +
+    ' is ' +
+    user.age +
+    ' years old and lives in ' +
+    user.country;
+  console.log(message);
+}
+
+logData();
